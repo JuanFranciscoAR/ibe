@@ -1022,7 +1022,7 @@ section,
 
 
   #header.scrolled {
-    height: 50px; /* Menú con menor altura cuando se hace scroll */
+    height: 75px; /* Menú con menor altura cuando se hace scroll */
   }
 
 
