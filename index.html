@@ -47,7 +47,8 @@
 
 <body class="index-page container-fluid">
 
-  <header id="header" class="header d-flex align-items-center px-3 fixed-top">
+  <!-- HEADER ESCRITORIO -->
+  <header id="header" class="header d-flex align-items-center px-3 fixed-top d-none d-lg-block" style="transition: top 0.3s;">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
       <a class="logo d-flex align-items-center ms-5 ps-3">
         <img src="assets/img/LOGO-IACH.png" alt="Logo" class="w-110">
@@ -62,29 +63,36 @@
         <a href="https://wa.me/+56987623488?text=Hola,%20necesito%20más%20información" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
           <i class="bi bi-whatsapp" style="font-size: 30px; color: rgb(37, 211, 102, 0.8); "></i> <!-- Color verde de WhatsApp -->
         </a>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+       
   
       </nav>
     </div class="body-overlay">
 
-    <script>
-      document.addEventListener("scroll", function () {
-        const header = document.querySelector("#header");
-        const scrollY = window.scrollY;
+  </header>
 
-        if (scrollY > 50) {
-          // Añade la clase cuando se baja el scroll
-          header.classList.add("scrolled");
-        } else {
-          // Elimina la clase cuando se regresa al tope
-          header.classList.remove("scrolled");
-        }
-      });
-    </script>
+
+  <!-- movil -->
+  <header id="header" class="header d-flex align-items-center px-3 mt-4 d-lg-none">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a class="logo d-flex align-items-center   ">
+        <img src="assets/img/LOGO-IACH.png" alt="Logo" class="w-110">
+        <h1 class="sitename fs-4">Iglesia Bíblica Esperanza</h1>
+      </a>
+      <!-- <nav id="navmenu" class="">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Conócenos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+  
+      </nav> -->
+    </div >
 
   </header>
 
-  <main class="main">
+  <!-- ESCRITORIO -->
+  <main class="main mb-5 pb-5  d-none d-lg-block">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section transparent-background">
@@ -140,6 +148,149 @@
               Nuestro deseo es compartir el mensaje del evangelio. Por ese motivo, abrimos nuestras puertas para enseñar
               y responder preguntas sobre la Palabra de Dios (la Biblia).
             </p>
+          </div>
+
+          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-door-open "></i> <i class="bi bi-door-open "></i>
+                <h4><a>Puertas abiertas</a></h4>
+                <p>Nuestra comunidad es un punto de encuentro, un lugar donde todos son bienvenidos
+                  para conocer más sobre Jesucristo. Nuestro propósito es que tu visita sea amena y llena de
+                  aprendizaje.
+                </p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-book-half"></i>
+                <h4><a>Iglesia Biblíca</a></h4>
+                <p>Nuestra creencia y forma de vivir están cimentadas en la Biblia.
+                  Por ese motivo, nuestra enseñanza se basa en un método de estudio exhaustivo de las Escrituras.
+                </p>
+                <p class="pt-2"> Si deseas saber lo que la Biblia realmente dice, encontrarás un lugar para aclarar
+                  tus dudas y desarrollar una vida cristiana centrada en la Palabra de Dios.</p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-chat-square-text"></i>
+                <h4><a>Resuelve tus dudas</a></h4>
+                <p>Amamos a Jesús, y por ese motivo estamos dispuestos a compartir sobre Él.</p>
+                <p>Ya sea que sientas curiosidad por saber quién es Jesús realmente, qué enseñó,
+                  por qué murió, qué significa ser cristiano o por qué existe tanto sufrimiento en el mundo...
+                </p>
+                <p class="pt-3">Hemos creado espacios donde, con respeto y transparencia, podemos abordar todo tipo de
+                  preguntas.
+              
+                </p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-people-fill"></i>
+                <h4><a>Nuestras reuniones [Espacios]</a></h4>
+                <p class="fw-bold"> + Martes 19:30 a 21:00 hrs - Comunidad Misional</p>
+                <p>Espacio para compartir en torno a un té o café. Abrimos la Biblia y la estudiamos,
+                  en medio de una dinámica amena, sencilla y enriquecedora
+
+                <p class="fw-bold pt-3"> + Domingos 11:00 a 12:30 hrs - Reunión General</p>
+                <p>Espacio donde se reúne toda la comunidad. Es un tiempo para orar, cantar y escuchar
+                  la exposición de un texto bíblico. Aquí podrás conocer y aprender tanto sobre
+                  la Palabra de Dios como sobre la fe cristiana..
+                </p>
+              </div><!-- Icon-Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Contact Section -->
+
+
+    <section id="contact" class="contact section transparent-background">
+      <!-- Section Title -->
+      <div class="container section-title  " data-aos="fade-up">
+        <h2 class="text-center">Contacto</h2>
+        <p class="fs-4 text-center">Lugar de reuniónes |  Sede Esperanza </p>
+      </div><!-- End Section Title -->
+
+      <div class="container  mapgoogle">
+        <div class="text-center"
+          style="background-color: rgba(249, 249, 249, 0.8); border-radius: 10px; box-shadow: 0 4px 8px rgba(219, 16, 16, 0.1); padding: 15px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3343.952542034725!2d-71.43860534965552!3d-33.05771624195459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d9c3e0539137%3A0xacf7164e71d13fcb!2sJunta%20de%20Vecinos%20N%C2%B044%20Pob.%20Esperanza!5e0!3m2!1ses!2scl!4v1732770302687!5m2!1ses!2scl"
+            width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+
+    </section><!-- /Contact Section -->
+
+  </main>
+ 
+  <!-- MOVIL -->
+  <main id="mainup" class="main  d-lg-none">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section transparent-background">
+
+      <div class="container text-center " data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="">¿Quién es Jesús</h2>
+            <h2 class="">y qué es el cristianismo?</h2>
+            <h3 class="pt-5 pb-n5 fs-2 fst-italic">Descúbrelo en solo 4 clases</h3>
+            <h3 class="fs-2 fst-italic text-white-55">La Biblia responderá todas tus preguntas</h3>
+            </p>
+          </div>
+
+
+          <div class="col-lg-5 mt-5 pt-2">
+            <a href="https://wa.me/+56987623488?text=Hola,%20necesito%20más%20información" target="_blank"
+              class="btn btn-success btn-lg rounded-pill d-inline-flex align-items-center">
+              <i class="bi bi-whatsapp fw-bold" style="font-size: 2.5rem; margin-right: 10px;"></i> Conversemos
+            </a>
+          </div>
+          
+
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section transparent-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestra comunidad IBE</h2>
+        <p class="fs-4">Somos personas que creemos en Jesucristo y nos gusta compartir de
+          Él con los demas</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <h3>Sobre nosotros </h3>
+            <p class="fs-5 mb-0 pb-0 pe-3"> Somos una iglesia anglicana perteneciente a la
+               <a class="fw-bold" href="https://iach.cl/" target="_blank" style="color: rgb(135, 215, 255); "> Provincia Anglicana de Chile.</a>
+            </p>
+            <!-- <p class="fs-5  pe-3 mt-0 pt-0">
+              Somos seguidores de Jesús que, a lo largo de la historia, han amado al Dios de la Biblia.
+            </p>
+            <p class="fs-5  pe-3 mt-0 pt-0">
+              Nuestro deseo es compartir el mensaje del evangelio. Por ese motivo, abrimos nuestras puertas para enseñar
+              y responder preguntas sobre la Palabra de Dios (la Biblia).
+            </p> -->
           </div>
 
           <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
