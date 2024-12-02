@@ -1047,11 +1047,9 @@ section,
   font-size: 130%;
 }
 
-/* subir main */
 #mainup {
   position: relative;
-  bottom: 10px;
+  bottom: 100px !important;
   
 }
-
 
