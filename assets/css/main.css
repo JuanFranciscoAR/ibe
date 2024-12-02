@@ -1046,3 +1046,12 @@ section,
   background-color: rgb(32, 152, 78); /* Aumenta la opacidad a 1 al pasar el mouse */
   font-size: 130%;
 }
+
+/* subir main */
+#mainup {
+  position: relative;
+  bottom: 100px;
+  
+}
+
+
